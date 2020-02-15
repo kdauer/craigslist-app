@@ -26,11 +26,16 @@
   <body>
     <div class="body-container">
       <div class="nav-bar">
-        <div class="fliter">
+        <div class="filter">
           <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="filter.html"
               ><ion-icon name="options-outline"></ion-icon
             ></a>
+            <img
+              id="user-icon"
+              src="./icons/account-icon.png"
+              alt="User Icon"
+            />
             <a href="index.html">X</a>
           </nav>
         </div>
@@ -51,44 +56,83 @@
           </form>
         </nav>
       </div>
-      <div class="sort-drop-down1">
-        <span class="dropdown">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Sort by date
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Today</a>
-            <a class="dropdown-item" href="#">This Week</a>
-            <a class="dropdown-item" href="#">This Month</a>
-          </div>
-        </span>
-        <span class="dropdown">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Sort by price
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Low to High</a>
-            <a class="dropdown-item" href="#">high to Low</a>
-          </div>
-        </span>
+      <div class="criteria-container">
+        <div class="sort-drop-down1">
+          <span class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Sort by date
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Today</a>
+              <a class="dropdown-item" href="#">This Week</a>
+              <a class="dropdown-item" href="#">This Month</a>
+            </div>
+          </span>
+          <span class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Sort by price
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Low to High</a>
+              <a class="dropdown-item" href="#">high to Low</a>
+            </div>
+          </span>
+        </div>
       </div>
-      <div class="listings"><a href="./details.html">Flats</a></div>
+    </div>
+    <div class="card" id="card" style="width: 20rem;">
+      <a href="details.html">
+        <img
+          class="card-img-top"
+          src="https://images.craigslist.org/00808_7eQd9y0K3ma_300x300.jpg"
+          alt="flat-image"
+      /></a>
+      <div class="card-body">
+        <h5 class="card-title">
+          Sunny room with single bed for rent in schöneberg
+        </h5>
+        <p class="card-price">499 €</p>
+      </div>
+    </div>
+    <div class="card" id="card" style="width: 20rem;">
+      <a href="details.html">
+        <img
+          class="card-img-top"
+          src="https://images.craigslist.org/00606_dpK8wmMXTmL_300x300.jpg"
+          alt="flat-image"
+      /></a>
+      <div class="card-body">
+        <h5 class="card-title">Small flat with own bathroom</h5>
+        <p class="card-price">250 €</p>
+      </div>
+    </div>
+    <div class="card" id="card" style="width: 20rem;">
+      <a href="details.html">
+        <img
+          class="card-img-top"
+          src="https://images.craigslist.org/00f0f_jshcMuvevkj_300x300.jpg"
+          alt="flat-image"
+      /></a>
+      <div class="card-body">
+        <h5 class="card-title">Nice appartment outside of town</h5>
+        <p class="card-price">320 €</p>
+      </div>
     </div>
     <script src="./scripts/script.js"></script>
     <script

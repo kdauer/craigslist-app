@@ -32,6 +32,15 @@
   </head>
   <body>
     <div class="carousel">
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -43,26 +52,20 @@
               src="https://images.craigslist.org/00808_7eQd9y0K3ma_300x300.jpg"
               class="d-block w-100"
               alt="Image 1"
-              height="100"
-              width="42"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://images.craigslist.org/00808_7eQd9y0K3ma_300x300.jpg"
+              src="https://images.craigslist.org/00606_dpK8wmMXTmL_300x300.jpg"
               class="d-block w-100"
               alt="Image2"
-              height="100"
-              width="42"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://images.craigslist.org/00808_7eQd9y0K3ma_300x300.jpg"
+              src="https://images.craigslist.org/00f0f_jshcMuvevkj_300x300.jpg"
               class="d-block w-100"
               alt="Image3"
-              height="100"
-              width="42"
             />
           </div>
         </div>
@@ -86,16 +89,66 @@
         </a>
       </div>
     </div>
-    <div><h3>Flat Title</h3></div>
-    <div><h3>Price</h3></div>
-    <div><h3>Flat description</h3></div>
-    <div>
-      <h6>preferences:</h6>
-      <button type="button" class="btn btn-light">Balcony</button>
-      <button type="button" class="btn btn-light">Dishwasher</button>
-      <button type="button" class="btn btn-light">Smoker Friendly</button>
+    <div class="sent-container">
+      <h3>Request Sent</h3>
+      <a href="list.html">Go back to list</a>
     </div>
-    <div id="map" style="width: 200px; height: 200px;"></div>
+    <div class="detail-header">
+      <h3>Sunny room with single bed for rent in schöneberg</h3>
+    </div>
+    <div class="detail-header"><h3 id="price">Price: 499 €</h3></div>
+    <div>
+      <p id="description">
+        A sunlit and simple five-bedroom apartment with a beautiful balcony and
+        single beds for rent. You'll be a 3-minute walk from Kleistpark Station,
+        and nearby you will find lots of restaurants, cafes, and shops to
+        enjoy.<br />Important: the apartment has five bedrooms, but only 1
+        bathroom.More Information: homespace.website/2h2q-nopromoted ", notices:
+        "do NOT contact me with unsolicited services or offers
+      </p>
+    </div>
+    <div id="preferences">
+      <button type="button" class="btn btn-light">
+        <img src="./icons/balcony-icon.svg" alt="Balcony" height="16px" /><br />
+        Balcony
+      </button>
+      <button type="button" class="btn btn-light">
+        <img
+          src="./icons/balcony-icon.svg"
+          alt="Balcony"
+          height="16px"
+        /><br />Dishwasher
+      </button>
+      <button type="button" class="btn btn-light">
+        <img
+          src="./icons/smoker-icon.svg"
+          alt="Balcony"
+          height="16px"
+        /><br />Smoker Friendly
+      </button>
+    </div>
+    <div id="map-div">
+      <div id="map" style="width: 200px; height: 200px;"></div>
+    </div>
+    <div></div>
+    <form>
+      <div class="form-group">
+        <textarea
+          class="form-control"
+          id="FormControlTextarea"
+          rows="3"
+          placeholder="type your message here..."
+        ></textarea>
+        <div class="col-auto">
+          <button type="button" id="message-btn" class="btn btn-primary mb-2">
+            Send a Request
+          </button>
+        </div>
+      </div>
+    </form>
+    <a id="backToList" href="list.html"
+      ><ion-icon name="return-down-back-outline"></ion-icon
+    ></a>
     <script>
       mapboxgl.accessToken =
         "pk.eyJ1Ijoic2hhdWxpdHRvIiwiYSI6ImNrNmk5dGZldTAyaWEza25udHMyMmsyM2wifQ.4Y2j_O7W5UvuwxXH7VDeEw";
@@ -108,7 +161,7 @@
         zoom: 8
       });
 
-      new mapboxgl.Marker().setLngLat().addTo(map);
+      new mapboxgl.Marker().setLngLat(coordinates).addTo(map);
     </script>
     <script src="./scripts/script.js"></script>
     <script

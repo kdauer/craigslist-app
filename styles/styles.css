@@ -24,8 +24,127 @@ body {
   padding: 20% 40%;
   /* max-height: 25%;
   max-width: 80%; */
-  border: 1px solid black;
   text-decoration: none;
+}
+
+.home-container a {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#list-image {
+  background-image: url("../images/find-image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+}
+
+#user-icon {
+  color: white;
+  padding-left: 40vw;
+}
+
+#rent-image {
+  background-image: url("../images/rent-out-image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar-home {
+  background-color: #562f7e;
+  height: 10vh;
+}
+
+.navbar-list img {
+  max-height: 10vh;
+}
+
+.search-details {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin-top: 2%;
+}
+
+.criteria-container {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0;
+}
+
+.sent-container {
+  display: none;
+}
+
+.detail-header {
+  text-align: center;
+  margin-top: 1%;
+}
+
+#price {
+  text-align: start;
+  margin-left: 7%;
+}
+
+#apply-button a {
+  text-decoration: none;
+  color: white;
+}
+
+#card {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  margin: 2vh 0;
+}
+
+#map-div {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0;
+}
+
+#preferences {
+  display: flex;
+  justify-content: center;
+}
+
+.backToList {
+  display: flex;
+  align-items: center;
+}
+
+#description {
+  margin: 1%;
+}
+
+.btn {
+  margin: 0 2vw;
+}
+
+.form-group {
+  margin: 0 10vw;
+}
+
+#message-btn {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  border-style: 2px solid black;
+  height: 10%;
+  width: 10%;
 }
 
 /* 

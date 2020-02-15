@@ -26,7 +26,7 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <span class="navbar-brand mb-0 h1">Filters</span>
-      <a href="index.html">X</a>
+      <a href="list.html">X</a>
     </nav>
     <h3>Price</h3>
     <form>
@@ -50,19 +50,7 @@
         checked
       />
       <label class="form-check-label" for="privateRoom">
-        private room
-      </label>
-    </div>
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="radio"
-        name="sharedRoom"
-        id="sharedRoom"
-        value="option2"
-      />
-      <label class="form-check-label" for="sharedRoom">
-        shared room
+        rooms and share
       </label>
     </div>
     <div class="form-check disabled">
@@ -90,24 +78,73 @@
       </div>
     </form>
     <h3>Preferences</h3>
-    <button type="button" class="btn btn-light">Balcony</button>
-    <button type="button" class="btn btn-light">Dishwasher</button>
     <button type="button" class="btn btn-light">
-      <ion-icon name="logo-no-smoking-outline"></ion-icon><br />Smoker Friendly
+      <img src="./icons/balcony-icon.svg" alt="Balcony" height="16px" /><br />
+      Balcony
     </button>
-    <button type="button" class="btn btn-light">Pets</button>
-    <button type="button" class="btn btn-light">Parking Space</button>
-    <button type="button" class="btn btn-light">Washing Machine</button>
-    <button type="button" class="btn btn-light">Wheelchair Access</button>
     <button type="button" class="btn btn-light">
-      <ion-icon name="thermometer-outline"></ion-icon><br />heating
+      <img
+        src="./icons/balcony-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />Dishwasher
     </button>
-    <button type="button" class="btn btn-light">Elevator</button>
     <button type="button" class="btn btn-light">
-      <ion-icon name="bed-outline"></ion-icon><br />furnished
+      <img
+        src="./icons/smoker-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />Smoker Friendly
+    </button>
+    <button type="button" class="btn btn-light">
+      <img src="./icons/pet-icon.svg" alt="Balcony" height="16px" /><br />Pets
+    </button>
+    <button type="button" class="btn btn-light">
+      <img
+        src="./icons/parking-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />Parking Space
+    </button>
+    <button type="button" class="btn btn-light">
+      <img
+        src="./icons/washing-machine-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />Washing Machine
+    </button>
+    <button type="button" class="btn btn-light">
+      <img
+        src="./icons/wheelchair-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />Wheelchair Access
+    </button>
+    <button type="button" class="btn btn-light">
+      <img
+        src="./icons/heating-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />heating
+    </button>
+    <button type="button" class="btn btn-light">
+      <img
+        src="./icons/elevator-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />Elevator
+    </button>
+    <button type="button" class="btn btn-light">
+      <img
+        src="./icons/furniture-icon.svg"
+        alt="Balcony"
+        height="16px"
+      /><br />furnished
     </button>
     <br />
-    <button type="button" class="btn btn-primary btn-lg">Apply</button>
+    <button id="apply-button" type="button" class="btn btn-primary btn-lg">
+      <a href="list.html">Apply</a>
+    </button>
     <script src="./scripts/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
