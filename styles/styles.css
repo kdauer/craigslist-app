@@ -1,9 +1,5 @@
-.home-container {
-  text-align: center;
-  height: 25%;
-  width: 80%;
-  border-style: 5px solid black;
-  text-decoration: none;
+* {
+  font-family: "Open Sans", sans-serif;
 }
 $xl-text-size: 36;
 $lg-text-size: 24px;
@@ -19,6 +15,17 @@ $xs-text-size: 14px;
 
 body {
   padding: 0rem;
+}
+
+.home-container {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10vh 10vw;
+  padding: 12.5% 30%;
+  /* max-height: 25%;
+  max-width: 80%; */
+  border: 1px solid black;
+  text-decoration: none;
 }
 
 /* 
