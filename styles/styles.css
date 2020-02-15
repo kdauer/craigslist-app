@@ -1,0 +1,86 @@
+$xl-text-size: 36;
+$lg-text-size: 24px;
+$md-text-size: 18px;
+$nm-text-size: 16px;
+$xs-text-size: 14px;
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    #menu-btn {
+      display: block;
+    }
+    nav.nav-mobile {
+      max-width: 100%;
+    }
+  }
+
+  main {
+    padding: 0rem;
+    .content-wrapper {
+    }
+  }
+
+  .profile {
+    justify-content: flex-start;
+    .profile-head {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      img {
+        flex: unset;
+      }
+      .profile-intro {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 1281px) {
+  #header-logo {
+    position: relative;
+    width: 4rem;
+    height: auto;
+    top: 1rem;
+    left: 1.2rem;
+  }
+
+  //CSS
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  //CSS
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  //CSS
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  //CSS
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
