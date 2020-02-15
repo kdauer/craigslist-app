@@ -9,12 +9,44 @@
   </head>
   <body>
     <div class="body-container"> 
-        <div class="nav-bar"><h1>nav Bar</h1></div>
-        <div class="search-form">Seach Form
-            <div><input type="text" name="" id=""></form></div>
+        <div class="nav-bar">
+            <div class="fliter">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="filter.html">Navbar</a>
+                </nav>
+            </div>
         </div>
-        <div class="sort-drop-down">Drop down menu</div>
-        <div class="listings">Flats</div>      
+        <div></div>
+        <div>
+            <nav class="search-details">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+        <div class="sort-drop-down1">
+            <span class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by date
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Today</a>
+                  <a class="dropdown-item" href="#">This Week</a>
+                  <a class="dropdown-item" href="#">This Month</a>
+                </div>
+            </span>
+            <span class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by price
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Low to High</a>
+                  <a class="dropdown-item" href="#">high to Low</a>
+                </div>
+            </span>
+        </div>
+        <div class="listings"><a href="./details.html">Flats</a></div>      
     </div> 
     <script src="./scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
